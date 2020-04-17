@@ -10,13 +10,33 @@
 nav {font-family: sans-serif;font-size: 10px;}
 #main {width: 900px; margin: 10px auto;}
 
+body {
+    font-family: lato;
+    font-size: 18px;
+}
+body {
+    background-image: url(/Users/sirrodriguez/Documents/menuassessment/ct-assessment-stylemenu/assets/images/map-bg.jpg);
+}
+
+@font-face {
+    font-family: 'Supermercado One';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Supermercado One Regular'), local('SupermercadoOne-Regular'), url(https://fonts.gstatic.com/s/supermercadoone/v9/OpNXnpQWg8jc_xps_Gi14kVVEXOn20H9MQtCVTo.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
 /* 
     Add a CSS ruleset targeting the restaurant name to accomplish the following:
         - Use the 'Supermercado One' font 
         - set the font size to 45px 
         - set the font color to #5d4037
 */
-
+h1 {
+    font-family: supermercado one;
+    font-size: 45px;
+    color: #5d4037;
+}
 
 /* 
     Update the following ruleset (#menu) to accomplish the following:
@@ -25,6 +45,8 @@ nav {font-family: sans-serif;font-size: 10px;}
 #menu {
     columns: 400px 2;
     column-gap: 100px;
+    column-rule-style: dashed;
+    column-rule-color: rosybrown;
 }
 
 section {padding-bottom: 50px;}
@@ -35,14 +57,20 @@ h2 {margin: 0;}
         - Show each of the section headings of the menu  in small caps
         - set the font color to #6d4c41
 */
-
+h2 {
+    font-variant: small-caps;
+    color: #6d4c41;
+}
 
 /* 
     Add a CSS ruleset targeting the name of each menu item to accomplish the following:
         - Set the font size to 20px
         - Make the font bold
 */
-
+dt {
+    font-size: 20px;
+    font-weight: bold;
+}
 
 dd {margin: 0 0 12px 0; display: flex;}
 .details {order: 1;}
@@ -55,6 +83,8 @@ dd {margin: 0 0 12px 0; display: flex;}
 .price {
     order: 2;
     padding-left: 10px;
+    color: firebrick;
+    font-size: large;
 }
 
 address {padding: 10px;}
@@ -63,3 +93,6 @@ address {padding: 10px;}
     Add a CSS ruleset targeting the footer to accomplish the following:
         - Draw a 2px dashed rosybrown border
 */
+footer {
+    border: 2px dashed rosybrown;
+}
